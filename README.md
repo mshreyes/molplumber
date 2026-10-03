@@ -12,10 +12,20 @@ Reported model performance depends on how close the test set is to the training 
 
 ## Installation
 
+Inside your project directory where `pyproject.toml` is located:
+
+### Using `uv`
+
 ```bash
-git clone https://github.com/<your-username>/molplumber.git
-cd molplumber
+uv pip install -e .
+
+```
+
+### Using standard `pip`
+
+```bash
 pip install -e .
+
 ```
 
 Requires Python ≥ 3.9, RDKit, pandas and numpy.
@@ -100,6 +110,12 @@ pip install -e ".[dev]"
 pytest
 ```
 
+---
+
 ## License
 
-Add a license before publishing (MIT or BSD-3 are common choices for cheminformatics tools).
+MIT
+
+## Disclaimer
+
+Google Gemini 3.8 Flash was used to tidy up the code and generate the README.md file.
