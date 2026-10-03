@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "molplumber"
+version = "0.1.0"
+description = "Train/test leakage diagnostics for molecular datasets: nearest-neighbour Tanimoto and scaffold overlap."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["rdkit", "pandas", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+molplumber = "molplumber.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
